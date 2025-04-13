@@ -49,16 +49,6 @@ Our system utilizes advanced Convolutional Neural Networks (CNNs) trained on tho
 - **Language**: TypeScript 5.5.3
 - **Deployment**: Netlify
 
-## 📊 Performance Metrics
-
-| Metric | Value |
-|--------|--------|
-| Accuracy | 98% |
-| Sensitivity | 96.8% |
-| Specificity | 97.2% |
-| Processing Time | ~2.5s |
-| False Positive Rate | 2.8% |
-| False Negative Rate | 3.2% |
 
 ## 🔬 Model Architecture
 
