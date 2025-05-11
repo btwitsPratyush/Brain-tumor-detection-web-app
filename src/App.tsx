@@ -44,9 +44,8 @@ function App() {
   const loadModel = async () => {
     try {
       setModelError(null);
-      // Note: The model URL is currently unavailable. This will need to be updated with the correct URL when available
-      const loadedModel = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/brain-tumor/model.json');
-      setModel(loadedModel);
+      // Model is currently unavailable - setting error state to enable demo mode
+      setModelError('The AI model is currently unavailable. Running in demo mode.');
       setModelLoading(false);
     } catch (error) {
       console.error('Error loading model:', error);
@@ -74,34 +73,14 @@ function App() {
     try {
       const tensor = await preprocessImage(imageData);
       
-      // If model is loaded, use it for prediction
-      if (model) {
-        const predictions = await model.predict(tensor) as tf.Tensor;
-        const data = await predictions.data();
-        
-        // Get the highest confidence prediction
-        const maxIndex = data.indexOf(Math.max(...Array.from(data)));
-        const confidence = data[maxIndex] * 100;
-        
-        // Map index to tumor type
-        const tumorTypeMap = ['glioma', 'meningioma', 'pituitary'] as const;
-        const predictedType = tumorTypeMap[maxIndex];
-        
-        setResult({
-          type: predictedType,
-          confidence,
-          details: tumorTypes[predictedType]
-        });
-      } else {
-        // Fallback for demo when model isn't available
-        const mockTypes = Object.keys(tumorTypes) as Array<keyof typeof tumorTypes>;
-        const randomType = mockTypes[Math.floor(Math.random() * mockTypes.length)];
-        setResult({
-          type: randomType,
-          confidence: 85 + Math.random() * 10,
-          details: tumorTypes[randomType]
-        });
-      }
+      // Since model is unavailable, use demo mode
+      const mockTypes = Object.keys(tumorTypes) as Array<keyof typeof tumorTypes>;
+      const randomType = mockTypes[Math.floor(Math.random() * mockTypes.length)];
+      setResult({
+        type: randomType,
+        confidence: 85 + Math.random() * 10,
+        details: tumorTypes[randomType]
+      });
     } catch (error) {
       console.error('Error analyzing image:', error);
       setResult(null);
