@@ -34,6 +34,7 @@ function App() {
   } | null>(null);
   const [loading, setLoading] = useState(false);
   const [modelLoading, setModelLoading] = useState(true);
+  const [modelError, setModelError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -42,13 +43,14 @@ function App() {
 
   const loadModel = async () => {
     try {
-      // Load the pre-trained model
+      setModelError(null);
+      // Note: The model URL is currently unavailable. This will need to be updated with the correct URL when available
       const loadedModel = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/brain-tumor/model.json');
       setModel(loadedModel);
       setModelLoading(false);
     } catch (error) {
       console.error('Error loading model:', error);
-      // For demo purposes, we'll continue without the model
+      setModelError('The AI model is currently unavailable. Please try again later.');
       setModelLoading(false);
     }
   };
@@ -212,6 +214,12 @@ function App() {
           <div className="text-center py-12">
             <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-purple-400" />
             <p className="text-gray-400">Loading AI model...</p>
+          </div>
+        ) : modelError ? (
+          <div className="text-center py-12 space-y-4">
+            <AlertCircle className="h-12 w-12 text-red-400 mx-auto" />
+            <p className="text-red-400 font-semibold">{modelError}</p>
+            <p className="text-gray-400">The application is running in demo mode with simulated results.</p>
           </div>
         ) : (
           <div
