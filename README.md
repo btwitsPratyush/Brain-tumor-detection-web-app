@@ -103,7 +103,7 @@ npm run build
 - [ ] Enhanced visualization tools
 - [ ] Integration with medical record systems
 
-## 👥 Contributors
+## 👥 Contributor:-
 
 - [Pratyush Kumar](https://github.com/btwitsPratyush) - Project Lead & Developer
 
