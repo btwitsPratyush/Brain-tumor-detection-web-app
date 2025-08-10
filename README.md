@@ -95,7 +95,7 @@ npm run dev
 npm run build
 ```
 
-## 📈 Future Improvements
+## 📈 Future Improvements:-
 
 - [ ] Multi-class tumor classification
 - [ ] 3D MRI scan support
