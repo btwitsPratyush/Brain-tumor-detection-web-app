@@ -8,7 +8,7 @@
   [![Live Demo](https://img.shields.io/badge/demo-live-purple.svg)](https://symphonious-custard-2ca344.netlify.app)
 </div>
 
-## 🧠 About:
+## 🧠 About:-
 
 NeuroScan AI represents a breakthrough in medical imaging analysis, combining state-of-the-art deep learning with an intuitive web interface. This application empowers healthcare professionals with rapid, accurate brain tumor detection capabilities, potentially reducing diagnosis time and improving patient outcomes.
 
