@@ -31,7 +31,7 @@ Our system utilizes advanced Convolutional Neural Networks (CNNs) trained on tho
 }
 ```
 
-## 🎯 Key Features
+## 🎯 Key Features:-
 
 - Real-time tumor detection
 - User-friendly interface
