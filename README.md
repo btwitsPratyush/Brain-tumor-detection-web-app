@@ -14,7 +14,7 @@ NeuroScan AI represents a breakthrough in medical imaging analysis, combining st
 
 Our system utilizes advanced Convolutional Neural Networks (CNNs) trained on thousands of MRI scans, achieving remarkable accuracy in tumor detection. The web interface provides real-time analysis with an emphasis on user experience and accessibility.
 
-## 📊 Package Information:
+## 📊 Package Information:-
 
 ```json
 {
