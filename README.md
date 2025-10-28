@@ -40,7 +40,7 @@ Our system utilizes advanced Convolutional Neural Networks (CNNs) trained on tho
 - Drag-and-drop functionality
 - Mobile responsive design
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used:-
 
 - **Frontend Framework**: React 18.3.1
 - **Styling**: Tailwind CSS 3.4.1
