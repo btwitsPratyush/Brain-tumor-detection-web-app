@@ -122,7 +122,7 @@ Tumor     96.8%    3.2%
 No Tumor   2.8%   97.2%
 ```
 
-## 🙏 Acknowledgments
+## 🙏 Acknowledgments:-
 
 - Kaggle for providing the comprehensive brain MRI dataset
 - Medical professionals who helped in validating the results
