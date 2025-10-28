@@ -68,7 +68,7 @@ The model was trained on the Brain Tumor MRI Dataset from Kaggle, which includes
 - Various tumor types: meningioma, glioma, and pituitary
 - [Dataset Link](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
 
-## 🎮 Demo
+## 🎮 Demo:-
 
 https://github.com/btwitsPratyush/neuroscan-ai/assets/demo.gif
 
