@@ -50,7 +50,7 @@ Our system utilizes advanced Convolutional Neural Networks (CNNs) trained on tho
 - **Deployment**: Netlify
 
 
-## 🔬 Model Architecture
+## 🔬 Model Architecture:-
 
 The CNN architecture used for tumor detection consists of:
 
