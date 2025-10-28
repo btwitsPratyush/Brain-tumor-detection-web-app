@@ -60,7 +60,7 @@ The CNN architecture used for tumor detection consists of:
 - 2 Fully Connected Layers
 - Softmax Output Layer
 
-## 📚 Dataset
+## 📚 Dataset:-
 
 The model was trained on the Brain Tumor MRI Dataset from Kaggle, which includes:
 - 3000 T1-weighted contrast-enhanced MRI scans
